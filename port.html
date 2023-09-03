@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LimeX Studio</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Your provided CSS for the header */
+    .main-header {
+      position: relative;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+
+    .header-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #000000; /* Set the background color to black */
+    }
+
+    .header-content {
+      position: relative;
+      padding: 100px 0;
+      z-index: 1;
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Other sections and styles */
+    .about-section {
+      background-color: #000000;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .work-showcase {
+      background-color: #000000;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      color: rgb(43, 255, 0);
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+      color: rgb(0, 0, 0);
+    }
+
+    /* Centered section for the PayPal donation button */
+    .centered-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 60vh; /* Adjust as needed to center vertically */
+      background-color: #ffffff; /* You can change the background color */
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-background">
+      <img src="file:///C:/Users/muham/OneDrive/Pictures/LimeX-White.jpg" alt="Background Image" height="210" width="800">
+    </div>
+    <div class="header-content">
+      <h1></h1>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <h2 style="color: rgb(30, 255, 0);">About LimeX Studio</h2>
+    <h3 style="color: rgb(255, 255, 255);">Welcome to LimeX Studio</h3>
+    <h3 style="color: rgb(255, 255, 255);">A creative game development and website design company. With a journey that began just two months ago, we've already embarked on an exciting adventure in the world of game development. Our passion for crafting immersive gaming experiences and innovative website designs drives us forward. Currently, we're hard at work on our upcoming game, 'LimeX Simulator.' Our dedicated team thrives on pushing boundaries, embracing challenges, and bringing unique ideas to life. Join us on this thrilling journey as we continue to create captivating games and captivating websites</h3>
+  </section>
+
+  <section class="work-showcase">
+    <h2 style="color: rgb(9, 255, 0);">Our Work</h2>
+    <img class="card-img-top" src="file:///C:/Users/muham/OneDrive/Pictures/mobile%20copy.png" alt="AL Arraf" width="600" height="300">
+    <img class="card-img-top" src="file:///C:/Users/muham/OneDrive/Pictures/random.png" alt="LS" width="600" height="300">
+    <h2 style="color: rgb(255, 255, 255);">Help Us Make Better Games By Donating</h2>
+    <!-- Paste your PayPal donation button code here -->
+    <div id="donate-button"></div>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <script>
+      PayPal.Donation.Button({
+        env: 'production',
+        hosted_button_id: 'JLXMW7VZBPGM8',
+        image: {
+          src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+          alt: 'Donate with PayPal button',
+          title: 'PayPal - The safer, easier way to pay online!',
+        }
+      }).render('#donate-button');
+    </script>
+  </section>
+  
+  <footer class="footer">
+    <div class="social-media">
+      <!-- Add your social media icons here -->
+      <a href="https://www.youtube.com/channel/UCbz56MEiF7Hl2t12Um1bygA" class="social-icon">YouTube</a>
+      <a href="#" class="social-icon">Discord</a>
+      <a href="https://twitter.com/LimeX_7" class="social-icon">Twitter</a>
+    </div>
+    <p>&copy; 2023 LimeX Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
