@@ -102,20 +102,22 @@
     <img class="card-img-top" src="mobile%20copy.png" alt="AL Arraf" width="600" height="300">
     <img class="card-img-top" src="random.png" alt="LS" width="600" height="300">
     <h2 style="color: rgb(255, 255, 255);">Help Us Make Better Games By Donating</h2>
-    <!-- Paste your PayPal donation button code here -->
-    <div id="donate-button"></div>
-    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-    <script>
-      PayPal.Donation.Button({
-        env: 'production',
-        hosted_button_id: 'JLXMW7VZBPGM8',
-        image: {
-          src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-          alt: 'Donate with PayPal button',
-          title: 'PayPal - The safer, easier way to pay online!',
-        }
-      }).render('#donate-button');
-    </script>
+    <!-- Paste your PayPal donation button code here --
+    <div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'JLXMW7VZBPGM8',
+image: {
+src:'https://pics.paypal.com/00/s/YzBiMDg0NzMtZGFjOS00ODYyLTg0NTAtZmNhM2E2ZWI1MmIw/file.PNG',
+alt:'Donate with PayPal button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+
   </section>
   
   <footer class="footer">
