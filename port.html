@@ -16,7 +16,6 @@
       position: relative;
       text-align: center;
       color: rgb(0, 0, 0);
-      background-color: black; /* Set the background color to black */
     }
 
     .header-background {
@@ -53,22 +52,22 @@
       text-align: center;
     }
 
-    .footer {
-      background-color: #000000;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 20px 0;
-    }
+.footer {
+  background-color: #ffffff; /* Set the background color to white */
+  color: rgb(43, 255, 0); /* Set the text color to bright green */
+  text-align: center;
+  padding: 20px 0;
+}
 
-    .social-media {
-      margin-top: 20px;
-    }
+.social-media {
+  margin-top: 20px;
+}
 
-    .social-icon {
-      font-size: 24px;
-      margin: 0 10px;
-      color: white;
-    }
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: black; /* Set the social icon color to black */
+}
 
     /* Centered section for the PayPal donation button */
     .centered-section {
@@ -102,20 +101,22 @@
     <img class="card-img-top" src="mobile%20copy.png" alt="AL Arraf" width="600" height="300">
     <img class="card-img-top" src="sim.png" alt="LS" width="600" height="300">
     <h2 style="color: rgb(255, 255, 255);">Help Us Make Better Games By Donating</h2>
-    <!-- Paste your PayPal donation button code here -->
-    <div id="donate-button"></div>
-    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-    <script>
-      PayPal.Donation.Button({
-        env: 'production',
-        hosted_button_id: 'JLXMW7VZBPGM8',
-        image: {
-          src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-          alt: 'Donate with PayPal button',
-          title: 'PayPal - The safer, easier way to pay online!',
-        }
-      }).render('#donate-button');
-    </script>
+    <!-- PayPal donation button code -->
+    <div id="donate-button-container">
+      <div id="donate-button"></div>
+      <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+      <script>
+        PayPal.Donation.Button({
+          env: 'production',
+          hosted_button_id: 'JLXMW7VZBPGM8',
+          image: {
+            src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+            alt: 'Donate with PayPal button',
+            title: 'PayPal - The safer, easier way to pay online!',
+          }
+        }).render('#donate-button');
+      </script>
+    </div>
   </section>
   
   <footer class="footer">
