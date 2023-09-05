@@ -16,6 +16,7 @@
       position: relative;
       text-align: center;
       color: rgb(0, 0, 0);
+      background-color: #000000; /* Set the background color to black */
     }
 
     .header-background {
@@ -27,6 +28,12 @@
       z-index: -1;
     }
 
+    .header-content {
+      position: relative;
+      padding: 100px 0;
+      z-index: 1;
+    }
+
     .header-image {
       width: 100%;
       height: 100%;
@@ -35,55 +42,44 @@
 
     /* Other sections and styles */
     .about-section {
-      background-color: #000000;
+      background-color: #ffffff;
       padding: 50px 0;
       text-align: center;
     }
 
     .work-showcase {
-      background-color: #000000;
+      background-color: #ffffff;
       padding: 50px 0;
       text-align: center;
     }
 
-.footer {
-  background-color: #ffffff; /* Set the background color to white */
-  color: rgb(43, 255, 0); /* Set the text color to bright green */
-  text-align: center;
-  padding: 20px 0;
-}
+    .footer {
+      background-color: #ffffff;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px 0;
+    }
 
-.social-media {
-  margin-top: 20px;
-}
+    .social-media {
+      margin-top: 20px;
+    }
 
-.social-icon {
-  font-size: 24px;
-  margin: 0 10px;
-  color: black; /* Set the social icon color to black */
-}
-
-    /* Centered section for the PayPal donation button */
-    .centered-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 60vh; /* Adjust as needed to center vertically */
-      background-color: #ffffff; /* You can change the background color */
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <main class="main-header">
-    <!-- Removed the background color here -->
+  <header class="main-header">
     <div class="header-background">
       <img src="LimeX-White.jpg" alt="Background Image" height="210" width="1000">
     </div>
     <div class="header-content">
       <h1></h1>
     </div>
-  </main>
+  </header>
 
   <section class="about-section">
     <h2 style="color: rgb(30, 255, 0);">About LimeX Studio</h2>
