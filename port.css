@@ -9,7 +9,7 @@ body, h1, p {
   position: relative;
   text-align: center;
   color: rgb(0, 0, 0);
-  background-color: #000000; /* Set the background color to black */
+  background-color: #000000; /* Set the background color of the header to black */
 }
 
 .header-background {
@@ -19,12 +19,6 @@ body, h1, p {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.header-content {
-  position: relative;
-  padding: 100px 0;
-  z-index: 1;
 }
 
 .header-image {
@@ -47,8 +41,8 @@ body, h1, p {
 }
 
 .footer {
-  background-color: #ffffff;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff; /* Set the background color of the footer to white */
+  color: limegreen; /* Set the text color of the footer to lime green */
   text-align: center;
   padding: 20px 0;
 }
@@ -60,5 +54,15 @@ body, h1, p {
 .social-icon {
   font-size: 24px;
   margin: 0 10px;
-  color: white;
+  color: black; /* Set the social icon color to black */
+}
+
+/* Centered section for the PayPal donation button */
+.centered-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh; /* Adjust as needed to center vertically */
+  background-color: #ffffff; /* You can change the background color */
 }
