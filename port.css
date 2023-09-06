@@ -1,68 +1,68 @@
 /* Reset some default styles */
-body, h1, p {
-  margin: 0;
-  padding: 0;
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-/* Your provided CSS for the header */
-.main-header {
-  position: relative;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  background-color: #000000; /* Set the background color of the header to black */
+/* Set up CSS variables for customization */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #ff9800;
+    --font-family: Arial, sans-serif;
+    --line-height: 1.6;
 }
 
-.header-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+/* Basic styling */
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
 }
 
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
 }
 
-/* Other sections and styles */
-.about-section {
-  background-color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
+nav ul {
+    list-style: none;
 }
 
-.work-showcase {
-  background-color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
 }
 
-.footer {
-  background-color: #ffffff; /* Set the background color of the footer to white */
-  color: limegreen; /* Set the text color of the footer to lime green */
-  text-align: center;
-  padding: 20px 0;
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
-.social-media {
-  margin-top: 20px;
+section {
+    padding: 3rem;
+    text-align: center;
 }
 
-.social-icon {
-  font-size: 24px;
-  margin: 0 10px;
-  color: black; /* Set the social icon color to black */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-/* Centered section for the PayPal donation button */
-.centered-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 60vh; /* Adjust as needed to center vertically */
-  background-color: #ffffff; /* You can change the background color */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 5px;
 }
