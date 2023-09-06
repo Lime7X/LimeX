@@ -15,17 +15,23 @@
     .main-header {
       position: relative;
       text-align: center;
-      color: rgb(0, 0, 0);
-      background-color: #000000; /* Set the background color of the header to black */
+      color: #32CD32;
     }
 
     .header-background {
+      background-color: #000000;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1;
+    }
+
+    .header-content {
+      position: relative;
+      padding: 100px 0;
+      z-index: 1;
     }
 
     .header-image {
@@ -36,20 +42,20 @@
 
     /* Other sections and styles */
     .about-section {
-      background-color: #ffffff;
+      background-color: #000000;
       padding: 50px 0;
       text-align: center;
     }
 
     .work-showcase {
-      background-color: #ffffff;
+      background-color: #000000;
       padding: 50px 0;
       text-align: center;
     }
 
     .footer {
-      background-color: #ffffff; /* Set the background color of the footer to white */
-      color: limegreen; /* Set the text color of the footer to lime green */
+      background-color: #ffffff;
+      color: #32CD32;
       text-align: center;
       padding: 20px 0;
     }
@@ -61,27 +67,16 @@
     .social-icon {
       font-size: 24px;
       margin: 0 10px;
-      color: black; /* Set the social icon color to black */
-    }
-
-    /* Centered section for the PayPal donation button */
-    .centered-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 60vh; /* Adjust as needed to center vertically */
-      background-color: #ffffff; /* You can change the background color */
+      color: black;
     }
   </style>
 </head>
 <body>
   <header class="main-header">
     <div class="header-background">
-      <img src="LimeX-White.jpg" alt="Background Image" height="210" width="1000">
+      <img class="header-image" src="LimeX-White.jpg" alt="LimeX Studio">
     </div>
     <div class="header-content">
-      <h1></h1>
     </div>
   </header>
 
@@ -94,7 +89,7 @@
   <section class="work-showcase">
     <h2 style="color: rgb(9, 255, 0);">Our Work</h2>
     <img class="card-img-top" src="mobile%20copy.png" alt="AL Arraf" width="600" height="300">
-    <img class="card-img-top" src="sim.png" alt="LS" width="600" height="300">
+    <img class="card-img-top" src="sim.png" alt="LimeX Simulator" width="600" height="300">
     <h2 style="color: rgb(255, 255, 255);">Help Us Make Better Games By Donating</h2>
     <!-- PayPal donation button code -->
     <div id="donate-button-container">
