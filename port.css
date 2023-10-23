@@ -1,3 +1,71 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up CSS variables for customization */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #ff9800;
+    --font-family: Arial, sans-serif;
+    --line-height: 1.6;
+}
+
+/* Basic styling */
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+section {
+    padding: 3rem;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 5px;
+}
 /* Styles for smaller screens (portrait mode) */
 @media (max-width: 600px) {
     body {
